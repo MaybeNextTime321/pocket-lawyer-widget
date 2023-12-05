@@ -1,5 +1,5 @@
 (function() {
     var script = document.createElement('script');
-    script.src = '/index.html';
+    script.src = '/widget.html';
     document.head.appendChild(script);
 })();
