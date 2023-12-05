@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href='/style.css' rel='stylesheet' type="text/css">
+    <title>Pocket Lawyer Widget</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+<div id="chat-widget" onclick="toggleChat()">
+    <span>Pocket Lawyer</span>
+</div>
+
+<div id="chat-container">
+    <div id="close-button" onclick="toggleChat()">x</div>
+    <div id="iframe-container">
+        <iframe style="height:100%;" src="https://pocket-lawyer-app.bubbleapps.io/version-test/iframe" frameborder="0"></iframe>
+    </div>
+</div>
+
+<script src="/script.js"></script>
+</body>
+</html>
+
