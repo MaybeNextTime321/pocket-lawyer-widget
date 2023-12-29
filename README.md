@@ -2,4 +2,4 @@
 Pocket Lawyer Widget
 
 Use this source:
-<script src="https://cdn.jsdelivr.net/gh/timofeevvv12/pocket-lawyer-widget@latest/min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/timofeevvv12/pocket-lawyer-widget@latest/widget.js"></script>
