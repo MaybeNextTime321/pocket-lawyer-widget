@@ -2,7 +2,7 @@
 Pocket Lawyer Widget
 
 Use this source:
-
+```html
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         var script = document.createElement('script');
@@ -13,3 +13,4 @@ Use this source:
         document.body.appendChild(script);
     });
 </script>
+```
