@@ -8,7 +8,7 @@ Use this source:
         var script = document.createElement('script');
         script.src = "https://cdn.jsdelivr.net/gh/timofeevvv12/pocket-lawyer-widget@latest/widget.js";
         script.onload = function() {
-            pocket_lawyer_widget("USER-ID");
+            pocket_lawyer_widget("USER-ID", "TOPIC-ID");
         };
         document.body.appendChild(script);
     });
