@@ -9,8 +9,7 @@ function pocket_lawyer_widget(data) {
             if (xhr.readyState == 4) {
                 if (xhr.status == 200) {
                     var response = JSON.parse(xhr.responseText);
-                    if (response.validate === true) {
-                        // Сохраняем куку на один день
+                    if (response.status === "success" && response.response.validate === true) {
                         var expirationDate = new Date();
                         expirationDate.setDate(expirationDate.getDate() + 1);
                         document.cookie = "pocket_lawyer_validated=" + currentURL + "; expires=" + expirationDate.toUTCString() + "; path=/";
@@ -19,7 +18,6 @@ function pocket_lawyer_widget(data) {
                         console.error("Access to the widget is denied: " + xhr.status);
                     }
                 } else {
-                    // Обработка ошибок
                     console.error("Access to the widget is denied: " + xhr.status);
                 }
             }
