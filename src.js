@@ -4,7 +4,7 @@ function pocket_lawyer_widget(data, topic) {
         createAndAppendWidget(data, topic);
     } else {
         var xhr = new XMLHttpRequest();
-        xhr.open("GET", "https://pocket-lawyer-app.bubbleapps.io/version-test/api/1.1/wf/widget_validator" + "?userid=" + data + "&url=" + encodeURIComponent(currentURL), true);
+        xhr.open("GET", "https://pocket-lawyer-app.bubbleapps.io/api/1.1/wf/widget_validator" + "?userid=" + data + "&url=" + encodeURIComponent(currentURL), true);
         xhr.onreadystatechange = function() {
             if (xhr.readyState == 4) {
                 if (xhr.status == 200) {
